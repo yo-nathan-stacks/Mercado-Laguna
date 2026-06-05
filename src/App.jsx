@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import heroImage from './assets/hero.png';
 
 function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { label: 'Comprar Todo', href: '#shop' },
+    { label: 'Agarra y Vete', href: '#grab-go' },
+    { label: 'Regalos', href: '#gifts' },
+    { label: 'Visita', href: '#visit' }
+  ];
+
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900 font-sans">
       {/* Navigation */}
@@ -12,10 +21,9 @@ function App() {
               <span className="text-2xl font-serif tracking-tight font-bold text-stone-800">MERCADO LAGUNA</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Comprar Todo</a>
-              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Agarra y Vete</a>
-              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Regalos</a>
-              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Visita</a>
+              {navLinks.map((link) => (
+                <a key={link.href} href={link.href} className="text-stone-600 hover:text-stone-900 transition-colors">{link.label}</a>
+              ))}
             </div>
             <div className="flex items-center space-x-4">
               <button className="p-2 text-stone-600 hover:text-stone-900">
@@ -25,8 +33,22 @@ function App() {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
                 <span className="absolute top-0 right-0 block h-2 w-2 rounded-full bg-stone-800 ring-2 ring-white"></span>
               </button>
+              <button 
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="md:hidden p-2 text-stone-600 hover:text-stone-900"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+              </button>
             </div>
           </div>
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden border-t border-stone-200 pb-4">
+              {navLinks.map((link) => (
+                <a key={link.href} href={link.href} className="block px-4 py-2 text-stone-600 hover:text-stone-900 hover:bg-stone-50 transition-colors">{link.label}</a>
+              ))}
+            </div>
+          )}
         </div>
       </nav>
 
@@ -59,7 +81,7 @@ function App() {
       </header>
 
       {/* Featured Categories */}
-      <section className="py-24 bg-white">
+      <section id="shop" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-serif mb-4">Curado para Ti</h2>
@@ -85,7 +107,7 @@ function App() {
       </section>
 
       {/* Info Section */}
-      <section className="py-24 bg-stone-100">
+      <section id="visit" className="py-24 bg-stone-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -103,8 +125,8 @@ function App() {
                 </p>
                 <p>
                   <strong>Contacto:</strong><br />
-                  (949) 664-1008<br />
-                  laguna@visitmercado.com
+                  <a href="tel:+19496641008" className="text-stone-700 hover:text-stone-900 underline">(949) 664-1008</a><br />
+                  <a href="mailto:laguna@visitmercado.com" className="text-stone-700 hover:text-stone-900 underline">laguna@visitmercado.com</a>
                 </p>
               </div>
             </div>
@@ -143,15 +165,13 @@ function App() {
                 <li><a href="#" className="hover:text-white">Ubicaciones</a></li>
               </ul>
             </div>
-            <div>
               <h4 className="text-white font-medium mb-6">Soporte</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="hover:text-white">Contáctenos</a></li>
+                <li><a href="mailto:laguna@visitmercado.com" className="hover:text-white">Contáctenos</a></li>
                 <li><a href="#" className="hover:text-white">Envío</a></li>
                 <li><a href="#" className="hover:text-white">Devoluciones</a></li>
                 <li><a href="#" className="hover:text-white">Política de Privacidad</a></li>
               </ul>
-            </div>
           </div>
           <div className="border-t border-stone-800 pt-8 text-sm text-center md:text-left">
             <p>&copy; 2026 Mercado Laguna. Todos los derechos reservados.</p>
