@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImage from './assets/hero.png';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-stone-900/20 z-10"></div>
           <img 
-            src="/src/assets/hero.png" 
+            src={heroImage} 
             alt="Mercado Laguna Interior" 
             className="w-full h-full object-cover"
           />
