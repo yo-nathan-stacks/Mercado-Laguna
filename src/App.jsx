@@ -12,10 +12,10 @@ function App() {
               <span className="text-2xl font-serif tracking-tight font-bold text-stone-800">MERCADO LAGUNA</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Shop All</a>
-              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Grab + Go</a>
-              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Gifts</a>
-              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Visit</a>
+              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Comprar Todo</a>
+              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Agarra y Vete</a>
+              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Regalos</a>
+              <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">Visita</a>
             </div>
             <div className="flex items-center space-x-4">
               <button className="p-2 text-stone-600 hover:text-stone-900">
@@ -42,17 +42,17 @@ function App() {
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-serif text-white mb-6 leading-tight">
-            Elevating Everyday <br />Life in Laguna
+            Elevando la Vida <br />Cotidiana en Laguna
           </h1>
           <p className="text-xl text-stone-100 mb-10 max-w-xl">
-            High-quality ingredients, thoughtful gifts, and artisanal goods curated for our community.
+            Ingredientes de alta calidad, regalos reflexivos y artículos artesanales curados para nuestra comunidad.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <button className="bg-white text-stone-900 px-8 py-4 rounded-full font-medium hover:bg-stone-100 transition-colors">
-              Order Online
+              Ordenar en Línea
             </button>
             <button className="bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/30 transition-colors">
-              Our Locations
+              Nuestras Ubicaciones
             </button>
           </div>
         </div>
@@ -62,14 +62,14 @@ function App() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-serif mb-4">Curated for You</h2>
+            <h2 className="text-3xl font-serif mb-4">Curado para Ti</h2>
             <div className="h-1 w-20 bg-stone-800 mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { title: 'Grab + Go', desc: 'Freshly prepared meals and snacks for your day at the beach.', img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800' },
-              { title: 'Artisanal Pantry', desc: 'Hand-selected oils, spices, and specialty ingredients.', img: 'https://images.unsplash.com/photo-1562059390-a761a084768e?auto=format&fit=crop&q=80&w=800' },
-              { title: 'Thoughtful Gifts', desc: 'Unique items for home and heart, curated from local makers.', img: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=800' }
+              { title: 'Agarra y Vete', desc: 'Comidas y refrigerios recién preparados para tu día en la playa.', img: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=800' },
+              { title: 'Despensa Artesanal', desc: 'Aceites seleccionados a mano, especias e ingredientes especiales.', img: 'https://images.unsplash.com/photo-1562059390-a761a084768e?auto=format&fit=crop&q=80&w=800' },
+              { title: 'Regalos Reflexivos', desc: 'Artículos únicos para el hogar y el corazón, seleccionados de artesanos locales.', img: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=800' }
             ].map((cat, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="aspect-[4/5] overflow-hidden mb-6 bg-stone-100">
@@ -77,7 +77,7 @@ function App() {
                 </div>
                 <h3 className="text-xl font-serif mb-2">{cat.title}</h3>
                 <p className="text-stone-600 mb-4">{cat.desc}</p>
-                <a href="#" className="inline-block border-b border-stone-800 pb-1 text-sm font-medium hover:text-stone-500 hover:border-stone-500 transition-all">Shop Now</a>
+                <a href="#" className="inline-block border-b border-stone-800 pb-1 text-sm font-medium hover:text-stone-500 hover:border-stone-500 transition-all">Comprar Ahora</a>
               </div>
             ))}
           </div>
@@ -89,20 +89,20 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-serif mb-8 leading-tight">Visit Us in <br />Laguna Beach</h2>
+              <h2 className="text-4xl font-serif mb-8 leading-tight">Visítanos en <br />Laguna Beach</h2>
               <div className="space-y-6 text-lg text-stone-700">
                 <p>
-                  <strong>Location:</strong><br />
+                  <strong>Ubicación:</strong><br />
                   912 North Coast Highway,<br />
                   Laguna Beach, CA 92651
                 </p>
                 <p>
-                  <strong>Hours:</strong><br />
-                  Monday – Friday: 9am – 7pm<br />
-                  Saturday – Sunday: 10am – 6pm
+                  <strong>Horarios:</strong><br />
+                  Lunes – Viernes: 9am – 7pm<br />
+                  Sábado – Domingo: 10am – 6pm
                 </p>
                 <p>
-                  <strong>Contact:</strong><br />
+                  <strong>Contacto:</strong><br />
                   (949) 664-1008<br />
                   laguna@visitmercado.com
                 </p>
@@ -126,7 +126,7 @@ function App() {
             <div className="col-span-1 md:col-span-2">
               <span className="text-2xl font-serif tracking-tight font-bold text-white block mb-6">MERCADO LAGUNA</span>
               <p className="max-w-sm mb-8">
-                Celebrating elevating everyday life with high-quality ingredients and thoughtful gifts since 2023.
+                Celebrando la vida cotidiana elevada con ingredientes de alta calidad y regalos reflexivos desde 2023.
               </p>
               <div className="flex space-x-4">
                 {/* Social icons would go here */}
@@ -135,26 +135,26 @@ function App() {
               </div>
             </div>
             <div>
-              <h4 className="text-white font-medium mb-6">Explore</h4>
+              <h4 className="text-white font-medium mb-6">Explorar</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="hover:text-white">Shop All</a></li>
-                <li><a href="#" className="hover:text-white">Grab + Go</a></li>
-                <li><a href="#" className="hover:text-white">Gifts</a></li>
-                <li><a href="#" className="hover:text-white">Locations</a></li>
+                <li><a href="#" className="hover:text-white">Comprar Todo</a></li>
+                <li><a href="#" className="hover:text-white">Agarra y Vete</a></li>
+                <li><a href="#" className="hover:text-white">Regalos</a></li>
+                <li><a href="#" className="hover:text-white">Ubicaciones</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-medium mb-6">Support</h4>
+              <h4 className="text-white font-medium mb-6">Soporte</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="hover:text-white">Contact Us</a></li>
-                <li><a href="#" className="hover:text-white">Shipping</a></li>
-                <li><a href="#" className="hover:text-white">Returns</a></li>
-                <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-white">Contáctenos</a></li>
+                <li><a href="#" className="hover:text-white">Envío</a></li>
+                <li><a href="#" className="hover:text-white">Devoluciones</a></li>
+                <li><a href="#" className="hover:text-white">Política de Privacidad</a></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-stone-800 pt-8 text-sm text-center md:text-left">
-            <p>&copy; 2026 Mercado Laguna. All rights reserved.</p>
+            <p>&copy; 2026 Mercado Laguna. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
