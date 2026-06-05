@@ -1,4 +1,4 @@
-S:root {
+:root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -29,6 +29,10 @@ S:root {
     font-size: 16px;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @media (prefers-color-scheme: dark) {
   :root {
