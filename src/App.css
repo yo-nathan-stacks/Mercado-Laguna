@@ -1,3 +1,36 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--accent-bg);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: var(--accent);
+}
+button:hover {
+  border-color: var(--accent-border);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -7,14 +40,13 @@
   border: 2px solid transparent;
   transition: border-color 0.3s;
   margin-bottom: 24px;
-
-  &:hover {
-    border-color: var(--accent-border);
-  }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
+}
+.counter:hover {
+  border-color: var(--accent-border);
+}
+.counter:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .hero {
