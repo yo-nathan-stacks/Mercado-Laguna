@@ -35,7 +35,7 @@ function App() {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
                 <span className="absolute top-0 right-0 block h-2 w-2 rounded-full bg-stone-800 ring-2 ring-white"></span>
               </button>
-              <button 
+              <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="md:hidden p-2 text-stone-600 hover:text-stone-900"
               >
@@ -58,9 +58,9 @@ function App() {
       <header className="relative h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-stone-900/20 z-10"></div>
-          <img 
-            src={heroImage} 
-            alt="Mercado Laguna Interior" 
+          <img
+            src={heroImage}
+            alt="Mercado Laguna Interior"
             className="w-full h-full object-cover"
           />
         </div>
@@ -133,9 +133,9 @@ function App() {
               </div>
             </div>
             <div className="aspect-square bg-stone-200 rounded-2xl overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1000" 
-                alt="Store Interior" 
+              <img
+                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1000"
+                alt="Store Interior"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -167,13 +167,13 @@ function App() {
                 <li><a href="#" className="hover:text-white">Ubicaciones</a></li>
               </ul>
             </div>
-              <h4 className="text-white font-medium mb-6">Soporte</h4>
-              <ul className="space-y-4">
-                <li><a href="mailto:laguna@visitmercado.com" className="hover:text-white">Contáctenos</a></li>
-                <li><a href="#" className="hover:text-white">Envío</a></li>
-                <li><a href="#" className="hover:text-white">Devoluciones</a></li>
-                <li><a href="#" className="hover:text-white">Política de Privacidad</a></li>
-              </ul>
+            <h4 className="text-white font-medium mb-6">Soporte</h4>
+            <ul className="space-y-4">
+              <li><a href="mailto:laguna@visitmercado.com" className="hover:text-white">Contáctenos</a></li>
+              <li><a href="#" className="hover:text-white">Envío</a></li>
+              <li><a href="#" className="hover:text-white">Devoluciones</a></li>
+              <li><a href="#" className="hover:text-white">Política de Privacidad</a></li>
+            </ul>
           </div>
           <div className="border-t border-stone-800 pt-8 text-sm text-center md:text-left">
             <p>&copy; 2026 Mercado Laguna. Todos los derechos reservados.</p>
