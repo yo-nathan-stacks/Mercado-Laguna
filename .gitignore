@@ -12,13 +12,19 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Editor / OS
 .vscode/*
 !.vscode/extensions.json
 .idea
+.vs/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Browser "saved page" artifacts (do not commit these)
+*.download
+*_files/
+OIP.*

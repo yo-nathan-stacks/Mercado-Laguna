@@ -1,1 +1,0 @@
-(function(){function n(){_w.CopilotAnswerFeedback&&CopilotAnswerFeedback.initCopFeedback();const n=_d.querySelector(".gs_infobbl a");n&&sj_be(n,"keydown",function(n){n.key==="Escape"&&this.blur()})}_w.sj_evt&&_w.sj_evt.bind("ACFThumbsUpDownFeedbackLoaded",n)})()
