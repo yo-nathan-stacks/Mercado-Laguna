@@ -22,60 +22,58 @@ artisan store → Comarca Lagunera MX marketplace), remove junk, ship clean code
 
 ### 1. Clean up the repo
 - [x] Inspect repo state and understand problems
-- [ ] Remove junk files (saved-page artifacts, .download, .vs, stray html, template assets)
-- [ ] Update .gitignore to prevent recurrence
-- [ ] Bump deploy workflow to current action versions
+- [x] Remove junk files (saved-page artifacts, .download, .vs, stray html, template assets)
+- [x] Update .gitignore to prevent recurrence
+- [x] Bump deploy workflow to current action versions
 
 ### 2. Fix project foundation
-- [ ] Write src/main.jsx (render App into #root)
-- [ ] Rewrite index.html (es-MX, SEO meta, JSON-LD, emerald favicon, fonts)
-- [ ] Replace generic favicon with branded ML favicon
-- [ ] Rewrite tailwind.config.js (emerald theme, fonts, animations)
-- [ ] Rewrite src/index.css (reset + Tailwind layers, no template cruft)
-- [ ] Remove src/App.css template cruft
-- [ ] Remove unused template assets
+- [x] Write src/main.jsx (render App into #root)
+- [x] Rewrite index.html (es-MX, SEO meta, JSON-LD, emerald favicon, fonts)
+- [x] Replace generic favicon with branded ML favicon
+- [x] Rewrite tailwind.config.js (emerald theme, fonts, animations)
+- [x] Rewrite src/index.css (reset + Tailwind layers, no template cruft)
+- [x] Remove src/App.css template cruft
+- [x] Remove unused template assets
 
 ### 3. Build data layer
-- [ ] src/data/categories.js
-- [ ] src/data/businesses.js
-- [ ] src/data/listings.js
-- [ ] src/data/testimonials.js
-- [ ] src/data/cities.js
+- [x] src/data/categories.js
+- [x] src/data/businesses.js
+- [x] src/data/listings.js
+- [x] src/data/testimonials.js
+- [x] src/data/cities.js
 
 ### 4. Build hooks / utils
-- [ ] src/hooks/useLocalStorage.js
-- [ ] src/hooks/useFavorites.js
-- [ ] src/utils/whatsapp.js
-- [ ] src/utils/format.js
+- [x] src/hooks/useLocalStorage.js
+- [x] src/hooks/useFavorites.js
+- [x] src/utils/whatsapp.js
+- [x] src/utils/format.js
 
 ### 5. Build components
-- [ ] src/components/TopBar.jsx
-- [ ] src/components/Header.jsx
-- [ ] src/components/Hero.jsx
-- [ ] src/components/TrustBar.jsx
-- [ ] src/components/CategoryGrid.jsx
-- [ ] src/components/BusinessCard.jsx
-- [ ] src/components/BusinessesSection.jsx
-- [ ] src/components/ListingCard.jsx
-- [ ] src/components/ListingsSection.jsx (search + filter + carousel)
-- [ ] src/components/StatsSection.jsx
-- [ ] src/components/HowItWorks.jsx
-- [ ] src/components/Testimonials.jsx
-- [ ] src/components/CTASection.jsx
-- [ ] src/components/PublishModal.jsx (publish-anuncio flow)
-- [ ] src/components/Footer.jsx
-- [ ] src/components/FloatingWhatsApp.jsx
+- [x] src/components/TopBar.jsx
+- [x] src/components/Header.jsx
+- [x] src/components/Hero.jsx
+- [x] src/components/TrustBar.jsx
+- [x] src/components/CategoryGrid.jsx
+- [x] src/components/BusinessCard.jsx
+- [x] src/components/BusinessesSection.jsx
+- [x] src/components/ListingCard.jsx
+- [x] src/components/ListingsSection.jsx (search + filter + carousel)
+- [x] src/components/HowItWorks.jsx
+- [x] src/components/Testimonials.jsx
+- [x] src/components/CTASection.jsx
+- [x] src/components/PublishModal.jsx (publish-anuncio flow)
+- [x] src/components/Footer.jsx
+- [x] src/components/FloatingWhatsApp.jsx
 
 ### 6. Build the App shell
-- [ ] src/App.jsx — compose views, state, modal, favorites wiring
+- [x] src/App.jsx — compose views, state, modal, favorites wiring
 
 ### 7. Docs & polish
-- [ ] Rewrite README.md (real project README)
-- [ ] LICENSE (MIT)
-- [ ] CONTRIBUTING / structure note (optional, fold into README)
-- [ ] Verify build passes (npm run build)
+- [x] Rewrite README.md (real project README)
+- [x] LICENSE (MIT)
+- [x] Verify build passes (npm run build) + eslint
 
 ### 8. Ship to GitHub
-- [ ] Create feature branch
-- [ ] Commit + push
-- [ ] Open pull request with description
+- [x] Create feature branch
+- [x] Commit + push
+- [x] Open pull request with description (#2)
