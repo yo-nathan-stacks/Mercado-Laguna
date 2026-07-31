@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vs/
+
+# Browser saved-page artifacts
+*_files/
+http___*.html
+*.download
+
+# OS junk
+Thumbs.db
+ehthumbs.db
